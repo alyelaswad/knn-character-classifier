@@ -5,6 +5,10 @@
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
+
+# knn-character-classifier
+This project implements a K-Nearest Neighbors (KNN) classifier for recognizing lower-case characters from noisy image data. The classifier uses an 80%-20% cross-validation approach to determine the optimal value of K, validated over 10 randomized train-validation splits. The final model is evaluated using a separate test dataset. 
+
 <!-- SHIELD LINKS -->
 [contributors-shield]: https://img.shields.io/github/contributors/alyelaswad/knn-character-classifier.svg?style=for-the-badge
 [contributors-url]: https://github.com/alyelaswad/knn-character-classifier/graphs/contributors
