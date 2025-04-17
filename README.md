@@ -8,7 +8,6 @@
 
 # knn-character-classifier
 This project implements a K-Nearest Neighbors (KNN) classifier for recognizing lower-case characters from noisy image data. The classifier uses an 80%-20% cross-validation approach to determine the optimal value of K, validated over 10 randomized train-validation splits. The final model is evaluated using a separate test dataset. 
-
 ## 📂 Dataset
 
 - **Train Path:** `../dataset/Noise Train`
@@ -44,15 +43,15 @@ This project implements a K-Nearest Neighbors (KNN) classifier for recognizing l
 
 ## 🛠️ Tech Stack
 
-| Tool / Library        | Purpose                              |
-|-----------------------|--------------------------------------|
-| `Python 3`            | Programming language                 |
-| `NumPy`               | Numerical operations                 |
-| `OpenCV (cv2)`        | Image reading & processing           |
-| `Matplotlib`          | Plotting graphs                      |
-| `Scikit-learn`        | Train-test split (cross-validation) |
-| `heapq`               | Efficient nearest neighbor selection |
-| `collections.Counter` | Label frequency analysis             |
+The project utilizes the following technologies and libraries:
+
+- ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+- ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+- ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+- ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white)
+- ![Scikit-Learn](https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
+> Note: While libraries like PyTorch, Pandas, or Seaborn aren't used in this project, you can easily extend the codebase to include them for further experimentation.
 
 ## 📈 Results
 
@@ -60,8 +59,9 @@ This project implements a K-Nearest Neighbors (KNN) classifier for recognizing l
 - 🎯 Avg CV Accuracy: ~**90.27%**
 
 ## 📁 File Structure
-
-
+- **src/**: Contains the Jupyter notebook and output visualizations.
+- **dataset/**: Contains the training and testing image datasets.
+- **README.md**: Project documentation.
 
 <!-- SHIELD LINKS -->
 [contributors-shield]: https://img.shields.io/github/contributors/alyelaswad/knn-character-classifier.svg?style=for-the-badge
