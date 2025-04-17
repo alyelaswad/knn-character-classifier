@@ -8,6 +8,63 @@
 
 # knn-character-classifier
 This project implements a K-Nearest Neighbors (KNN) classifier for recognizing lower-case characters from noisy image data. The classifier uses an 80%-20% cross-validation approach to determine the optimal value of K, validated over 10 randomized train-validation splits. The final model is evaluated using a separate test dataset. 
+## 📂 Dataset
+
+- **Format:** Grayscale `.jpg` images, size `12x12`
+- **Images per Class:**
+  - Train: 7 per character
+  - Test: 2 per character
+
+## 🚀 How It Works
+
+1. **Preprocessing:**
+   - Read all grayscale images from training and testing datasets.
+   - Normalize image pixel values to `[0, 1]`.
+
+2. **Training:**
+   - Cross-validation over 10 randomized 80%-20% splits of training data.
+   - For each fold, K values from 1 to 40 are evaluated.
+   - Accuracy is computed, and the best K per fold is stored.
+
+3. **Evaluation:**
+   - Use the most frequent best K across folds.
+   - Classify test data and compute character-wise correct classifications.
+
+4. **Visualization:**
+   - Plot: Mean error vs. K value.
+   - Plot: Correct classifications per character.
+
+## 📊 Output Visualizations
+
+### `KNN.jpg` — Mean Error vs. K
+
+![KNN Mean Error](https://github.com/alyelaswad/knn-character-classifier/blob/main/src/KNN.jpg?raw=true)
+
+### `Accuracy.jpg` — Per-character classification counts
+
+![Per-character Accuracy](https://github.com/alyelaswad/knn-character-classifier/blob/main/src/Accuracy.jpg?raw=true)
+
+
+## 🛠️ Tech Stack
+
+The project utilizes the following technologies and libraries:
+
+- ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+- ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+- ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+- ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white)
+- ![Scikit-Learn](https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
+
+## 📈 Results
+
+- ✅ Best K (via CV): **3**
+- 🎯 Avg CV Accuracy: ~**90.27%**
+
+## 📁 File Structure
+- **src/**: Contains the Jupyter notebook and output visualizations.
+- **dataset/**: Contains the training and testing image datasets.
+- **README.md**: Project documentation.
 
 <!-- SHIELD LINKS -->
 [contributors-shield]: https://img.shields.io/github/contributors/alyelaswad/knn-character-classifier.svg?style=for-the-badge
