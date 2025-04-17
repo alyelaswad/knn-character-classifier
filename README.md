@@ -36,8 +36,14 @@ This project implements a K-Nearest Neighbors (KNN) classifier for recognizing l
 
 ## 📊 Output Visualizations
 
-- `KNN.jpg` — Mean Error vs. K
-- `Accuracy.jpg` — Per-character classification counts
+### `KNN.jpg` — Mean Error vs. K
+
+![KNN Mean Error](https://github.com/alyelaswad/knn-character-classifier/blob/main/src/KNN.jpg?raw=true)
+
+### `Accuracy.jpg` — Per-character classification counts
+
+![Per-character Accuracy](https://github.com/alyelaswad/knn-character-classifier/blob/main/src/Accuracy.jpg?raw=true)
+
 
 ## 🛠️ Tech Stack
 
@@ -49,7 +55,6 @@ The project utilizes the following technologies and libraries:
 - ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white)
 - ![Scikit-Learn](https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 
-> Note: While libraries like PyTorch, Pandas, or Seaborn aren't used in this project, you can easily extend the codebase to include them for further experimentation.
 
 ## 📈 Results
 
